@@ -64,7 +64,9 @@ int main(void)
    
 <img src="https://github.com/user-attachments/assets/b960ff7a-b44f-41e0-bc7a-e572e1183aca" width="400" height="400">  
 
-* **Симуляция:** Опишите результаты симуляции вашей модели, включая полученные графики и данные.
+* **Симуляция:**
+  Запустим симуляцию:  
+  !["Демонстрация работы"](https://github.com/Strus05/MPSU/blob/main/presentation.gif)  
+  
 * **Анализ результатов:** Обсудите, какие выводы вы сделали на основе полученных результатов.
 * 
-!["Демонстрация работы"](https://github.com/Strus05/MPSU/blob/main/presentation.gif) 
