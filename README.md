@@ -58,7 +58,7 @@ int main(void)
    Соединяем кнопки с источником тока и подключаем каждую кнопку отдельно ко входам PB0, PB1 и PB2.  
    Светодиод подключаем через резистор к PC7 и "земле"; Связываем оставшиеся резисторы с выходами кнопок и "землей";  
    
-   <img src="https://github.com/user-attachments/assets/5817cdca-6e3b-4e9d-aa03-00a63829ce25" width="550" height="400"> 
+   <img src="https://github.com/user-attachments/assets/5817cdca-6e3b-4e9d-aa03-00a63829ce25" width="600" height="400"> 
 
 
 
