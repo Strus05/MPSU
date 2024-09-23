@@ -42,16 +42,16 @@ int main(void)
   <img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="300" height="200">  
    
   <center>  
-***4 резистора***    
+***4 резистора***     
   </center>   
 	
-  <img src="https://github.com/user-attachments/assets/d4ed3653-6d9d-4c98-8111-b00427422c14" width="300" height="200">
+  <img src="https://github.com/user-attachments/assets/d4ed3653-6d9d-4c98-8111-b00427422c14" width="300" height="200">  
  
   <center>  
  ***1 светодиод***  
   </center>  
   
-  <img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="300" height="200"> 
+  <img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="300" height="200">  
 
 
 * **Симуляция:** Опишите результаты симуляции вашей модели, включая полученные графики и данные.
