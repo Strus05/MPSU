@@ -1,2 +1,2 @@
 
-![Демонстрация работы](https://github.com/Strus05/MPSU/blob/main/presentation.gif) "Работа программы"
+![Демонстрация работы](https://github.com/Strus05/MPSU/blob/main/presentation.gif "Работа программы") 
