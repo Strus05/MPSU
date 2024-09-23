@@ -1,6 +1,3 @@
-<nav id="Работа с Atmel Studio" class="navbar">
-    121341 
-</nav>
 ## Работа с Atmel Studio
 
 * **Цель работы:** Создать логический элемент 3ИЛИ
