@@ -89,5 +89,5 @@ int main(void)
 * Пу пу пу, ну там это симулирует 1 0 1 0 вроде
 * как бэ в первом пункте всё описал
   ## Работа с fritzink  
-* Создаем схему установки:  
-  <img src="https://github.com/Strus05/MPSU/blob/main/image.png" width="400" height="400">
+* Создаем схему установки:   
+<img src="https://github.com/Strus05/MPSU/blob/main/image.png" width="400" height="400">
