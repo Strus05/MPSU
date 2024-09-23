@@ -61,8 +61,8 @@ int main(void)
    <img src="https://github.com/user-attachments/assets/5817cdca-6e3b-4e9d-aa03-00a63829ce25" width="600" height="400">  
 
 4. Загружаем в микроконтроллер файл программы в расширении .gex
-5. 
-<img src="https://github.com/user-attachments/assets/b960ff7a-b44f-41e0-bc7a-e572e1183aca" width="400" height="200">  
+   
+<img src="https://github.com/user-attachments/assets/b960ff7a-b44f-41e0-bc7a-e572e1183aca" width="200" height="400">  
 
 * **Симуляция:** Опишите результаты симуляции вашей модели, включая полученные графики и данные.
 * **Анализ результатов:** Обсудите, какие выводы вы сделали на основе полученных результатов.
