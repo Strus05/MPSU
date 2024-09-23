@@ -1,6 +1,6 @@
-* [Работа с Atmel Studio](https://github.com/Strus05/MPSU/edit/main/README.md#работа-с-atmel-studio)
-* [Моделирование в Proteus 8](https://github.com/Strus05/MPSU/edit/main/README.md#моделирование-в-proteus-8)
-* [Работа с fritzink](https://github.com/Strus05/MPSU/edit/main/README.md#работа-с-fritzink)
+* [Работа с Atmel Studio](#работа-с-atmel-studio)
+* [Моделирование в Proteus 8](#моделирование-в-proteus-8)
+* [Работа с fritzink](#работа-с-fritzink)
 ## Работа с Atmel Studio
 
 * **Цель работы:** Создать логический элемент 3ИЛИ
