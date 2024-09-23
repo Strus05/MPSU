@@ -32,26 +32,26 @@ int main(void)
 * **Создание модели:**
   Добавляем на схему:
   **Микроконтроллер ATmega16U4**
-  <center>  
+  
   <img src="https://github.com/user-attachments/assets/88663457-3789-480a-8469-6b5a86cd8920" width="400" height="400">  
-   </center>  
+  
   <center>  
 ***3 кнопки***   
    </center>  
-   <center>  
+
   <img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="300" height="200">  
-   </center>  
+   
   <center>  
 ***4 резистора***    
   </center>   
-	  <center>  
+	
   <img src="https://github.com/user-attachments/assets/d4ed3653-6d9d-4c98-8111-b00427422c14" width="300" height="200">
-   </center>  
+ 
   <center>  
  ***1 светодиод***  
   </center>  
   
-  <img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="300" height="200">  <center>  
+  <img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="300" height="200"> 
 
 
 * **Симуляция:** Опишите результаты симуляции вашей модели, включая полученные графики и данные.
