@@ -31,7 +31,7 @@
   
   <img src="https://github.com/user-attachments/assets/88663457-3789-480a-8469-6b5a86cd8920" width="400" height="400"> 
 3 кнопки  
-<img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="200" height="200"> 
+<img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="300" height="200"> 
 
 
 * **Симуляция:** Опишите результаты симуляции вашей модели, включая полученные графики и данные.
