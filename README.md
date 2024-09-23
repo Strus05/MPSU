@@ -1,4 +1,4 @@
-* [Глава 1](#chapter-1)
+* [fritzink](#Работа с fritzink)
   
 ## Работа с Atmel Studio
 
