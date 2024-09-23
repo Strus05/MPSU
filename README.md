@@ -33,7 +33,7 @@ int main(void)
   Добавляем на схему:
    
 ***Микроконтроллер ATmega16U4***  
-  <img src="https://github.com/user-attachments/assets/88663457-3789-480a-8469-6b5a86cd8920" width="200" height="200">    
+  <img src="https://github.com/user-attachments/assets/88663457-3789-480a-8469-6b5a86cd8920" width="300" height="300">    
   
 
 ***3 кнопки***   
