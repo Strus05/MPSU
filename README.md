@@ -66,29 +66,29 @@ int main(void)
 ***3 кнопки***   
 
 
-  <img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="150" height="100">  
+  <p align="center"><img src="https://github.com/user-attachments/assets/b48f0f41-6eb4-4967-9e2a-45e1472342c9" width="150" height="100"></p>   
    
 
 ***4 резистора***     
 
 	
-  <img src="https://github.com/user-attachments/assets/d4ed3653-6d9d-4c98-8111-b00427422c14" width="150" height="100">  
+  <p align="center"><img src="https://github.com/user-attachments/assets/d4ed3653-6d9d-4c98-8111-b00427422c14" width="150" height="100"></p>   
  
 
  ***1 светодиод***  
 
   
-  <img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="150" height="100">  
+  <p align="center"><img src="https://github.com/user-attachments/assets/853dd9b5-4a77-46bf-bf02-e15aac52a8b6" width="150" height="100"></p>   
 
    2. Соединяем кнопки с источником тока и подключаем каждую кнопку отдельно ко входам `PB5`, `PB6` и `PB7`.  
    3. Светодиод подключаем анодом через резистор R1 к выходу `PC7` и катодом к "земле"; Связываем кнопки через подтягивающие резисторы с "землей";  
  
 
-   <img src="https://github.com/user-attachments/assets/6b27329a-ca2c-4e94-b961-29c7534db4a1" width="700" height="400">  
+   <p align="center"><img src="https://github.com/user-attachments/assets/6b27329a-ca2c-4e94-b961-29c7534db4a1" width="700" height="400"></p>   
 
 4. Загружаем в микроконтроллер файл программы в расширении .hex
    
-<img src="https://github.com/user-attachments/assets/b960ff7a-b44f-41e0-bc7a-e572e1183aca" width="400" height="400">  
+<p align="center"><img src="https://github.com/user-attachments/assets/b960ff7a-b44f-41e0-bc7a-e572e1183aca" width="400" height="400"></p>     
 
 * **Симуляция:**
   Запустим симуляцию:  
@@ -99,7 +99,7 @@ int main(void)
 # Работа с fritzink
 Микроконтроллер ATmega16U4 используется на плате Arduino MICRO, рассмотрим её распиновку:
 
-<img src=https://github.com/Strus05/MPSU/blob/main/Pinout/Pinout_micro.png>
+<p align="center"><img src=https://github.com/Strus05/MPSU/blob/main/Pinout/Pinout_micro.png></p>   
 
 Из распиновки видим, что под `PC7` в Arduino MICRO подразумевается вывод ``DP13`` (Digital Port 13), а под `PB5`, `PB6`, `PB7` выводы `D9`, `D10`, `D11` соответственно.
 
