@@ -107,7 +107,9 @@ int main(void)
 
 * Собираем схему:
 
-<p align="center"><img src="https://github.com/user-attachments/assets/e3abbb15-0f13-4534-b044-4e3905ce2aee" width="400" height"400"></p>
-<p align="center"><img src=" https://github.com/user-attachments/assets/966facb3-ef93-41df-bf9c-387f717b727a" width="400" height"400"></p>
-<p align="center"><img src=" https://github.com/user-attachments/assets/000b7ef6-4f06-481e-823d-4ee03287d817" width="400" height"400"></p>
+<p align="center"><img src="https://github.com/user-attachments/assets/e3abbb15-0f13-4534-b044-4e3905ce2aee" width="400" height"400"></p>  
+
+<p align="center"><img src="https://github.com/user-attachments/assets/966facb3-ef93-41df-bf9c-387f717b727a" width="400" height"400"></p>  
+
+<p align="center"><img src="https://github.com/user-attachments/assets/000b7ef6-4f06-481e-823d-4ee03287d817" width="400" height"400"></p>
 
