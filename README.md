@@ -95,14 +95,14 @@ int main(void)
 !["Демонстрация работы"](https://github.com/Strus05/MPSU/blob/main/show.gif) 
   
 * **Анализ результатов:** 
-    - Реализуется алгоритм 3ИЛИ, в соотвествии с таблицей истинности: при вводе сигнала высокого уровня на любой из входов `PB5`, `PB6`, `PB7` на выходе `PC7` генерируется сигнал высокого уровня
+    - Реализуется алгоритм 3ИЛИ, в соотвествии с таблицей истинности: при вводе сигнала высокого уровня на любой из входов `PB0`, `PB1`, `PB2` на выходе `PC0` генерируется сигнал высокого уровня
 # Работа с fritzink
-Микроконтроллер ATmega16U4 используется на плате Arduino MICRO, рассмотрим её распиновку:
+Микроконтроллер ATmega328P используется на плате Arduino NANO, рассмотрим её распиновку:
 
-<p align="center"><img src=https://github.com/Strus05/MPSU/blob/main/Pinout/Pinout_micro.png></p>   
+<p align="center"><img src="https://github.com/user-attachments/assets/7350c675-203d-4579-ae7e-a646ded7ba88" width="400" height"400"></p>   
 
-Из распиновки видим, что под `PC7` в Arduino MICRO подразумевается вывод ``DP13`` (Digital Port 13), а под `PB5`, `PB6`, `PB7` выводы `D9`, `D10`, `D11` соответственно.
+Из распиновки видим, что под `PC0` в Arduino MICRO подразумевается вывод ``A0`` (Analog Pin 0), а под `PB5`, `PB6`, `PB7` выводы `D8`, `D9`, `D10` (Digital Pin 8, 9, 10) соответственно.
 
 * Собираем схему:
 
-<img src="https://github.com/Strus05/MPSU/blob/main/Fritzing/LR1_МП.png">
+<p align="center"><img src="https://github.com/user-attachments/assets/e3abbb15-0f13-4534-b044-4e3905ce2aee" width="400" height"400"></p>
