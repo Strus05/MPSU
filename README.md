@@ -103,6 +103,11 @@ int main(void)
 
 Из распиновки видим, что под `PC0` в Arduino NANO подразумевается вывод ``A0`` (Analog Pin 0), а под `PB0`, `PB1`, `PB2` выводы `D8`, `D9`, `D10` (Digital Pin 8, 9, 10) соответственно.
 
+
+
 * Собираем схему:
 
 <p align="center"><img src="https://github.com/user-attachments/assets/e3abbb15-0f13-4534-b044-4e3905ce2aee" width="400" height"400"></p>
+<p align="center"><img src=" https://github.com/user-attachments/assets/966facb3-ef93-41df-bf9c-387f717b727a" width="400" height"400"></p>
+<p align="center"><img src=" https://github.com/user-attachments/assets/000b7ef6-4f06-481e-823d-4ee03287d817" width="400" height"400"></p>
+
