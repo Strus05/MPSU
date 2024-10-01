@@ -1,3 +1,6 @@
+# Лабораторные работы:
+[Лабораторная работа №1. Порты ввода/вывода. Изучение режимов работы портов ввода/вывода](https://github.com/Strus05/MPSU/releases/tag/LR1(Proteus%2BAtmel%2BFritzing%2BPinout))
+
 # Авторы:
 [Астафьев Илья](https://github.com/astafa98), 
 [Никитин Даниил](https://github.com/ferizAMDlove), 
