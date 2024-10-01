@@ -60,7 +60,7 @@ int main(void)
   <p align="center"><b>Микроконтроллер ATmega328P</b></p>
 
        
-  <p align="center"><img src="https://github.com/user-attachments/assets/88663457-3789-480a-8469-6b5a86cd8920" width="300" height="300"></p>    
+  <p align="center"><img src="https://github.com/user-attachments/assets/b684bf26-8e01-4382-84a1-c5be93d0a71e" width="300" height="300"></p>    
   
 
   <p align="center"><b>3 кнопки</b></p>
