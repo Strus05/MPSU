@@ -1,6 +1,8 @@
 # Лабораторные работы:
 [Лабораторная работа №1. Порты ввода/вывода. Изучение режимов работы портов ввода/вывода](https://github.com/Strus05/MPSU/releases/tag/LR1(Proteus%2BAtmel%2BFritzing%2BPinout))
 
+[Лабораторная работа №2. Программирование таймеров](https://github.com/Strus05/MPSU/releases/tag/LR2)
+
 # Авторы:
 [Астафьев Илья](https://github.com/astafa98), 
 [Никитин Даниил](https://github.com/ferizAMDlove), 
@@ -9,6 +11,7 @@
 * [Работа с Atmel Studio](#работа-с-atmel-studio)
 * [Моделирование в Proteus 8](#моделирование-в-proteus-8)
 * [Работа с fritzink](#работа-с-fritzink)
+* [Работа с таймерами](#работа-с-таймерами)
 # Работа с Atmel Studio
 
 * **Цель работы:** Создать логический элемент 3ИЛИ
@@ -211,6 +214,10 @@ int main(void)
 ```
 **Демонстрация работы схемы в Proteus**
 
-!["Видео"](https://github.com/user-attachments/assets/16560de9-4044-40db-afee-dc51e0db04db)
+![Видео](https://github.com/user-attachments/assets/2af97a59-dcda-4d8c-9f52-24e5ffe974c4)
+
+Сигнал ШИМ при выкрученым на 75% потенциометром (75% скважность)
+
+![image](https://github.com/user-attachments/assets/03aa30e7-e5e6-4587-a788-c1bb3db724aa)
 
 
