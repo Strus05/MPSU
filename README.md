@@ -116,3 +116,101 @@ int main(void)
 
 <p align="center"><img src="https://github.com/user-attachments/assets/000b7ef6-4f06-481e-823d-4ee03287d817" width="400" height"400"></p>
 
+# Работа с таймерами
+
+* **Цель работы:** Изучить режимы работы таймера ATMEGA328P
+
+**Задачи:**
+1. Напишем программу, в которой при нажатии на кнопку, микроконтроллер формирует выдержку времени и зажигает зеленый светодиод с заданным периодом (0,1с и 1с)
+2. Напишем программу, в которой вывод PB5 при инициализации таймера 0 запрограммирован для выдачи сигнала с заданной частотой (1Гц)
+3. Напишем программу, в которой порт ввода PC0 подключен к потенциометру который регулирует напряжение на нём от 0 до +5В. Сигнал с порта PC0 обрабатывается с помощью АЦП и преобразуется в скважность ШИМ сигнала для порта вывода PB1 которым управляем частотой вращения двигателя.
+
+**Код программы в Atmel Studio**
+```
+#include <avr/io.h>
+#include <avr/interrupt.h>
+int scet = 0;
+char otschet1s = 0;
+char otschet1Gz = 0;
+
+void timer2_init() {
+	TCCR2B |= (1 << CS02) | (1 << CS01) | (1 << CS00);		//Задаём прескейлинг 1024. sT = 0,001024 c
+	OCR2A = 98;		// OCR2A*sT = период работы диода. Здесь 0,1с
+	OCR2B = 244;	// 0,25с
+}
+
+void timer0_init() {
+	TCCR0A |= (1 << WGM01);    // Режим CTC
+	OCR0A = 98;    // Значение при котором сбрасывается таймер (при 1МГц чипе, для 1с OCR1A = 977)
+	TCCR0B |= (1 << CS02) | (0 << CS01) | (1 << CS00);		//Задаём прескейлинг 1024
+}
+
+void pwm_init_1() {
+	TCCR1B |= (1 << WGM12);						// Режим FastPWM 10-bit
+	TCCR1A |= (1 << WGM11) | (1 << WGM10);
+	TCCR1A |= (1 << COM1A1);	// Clear OC1A/OC1B on compare match
+	TCCR1B |= (0 << CS12) | (1 << CS11) | (1 << CS10);		//Задаём прескейлинг 1024
+}
+void setup_adc() {
+	ADMUX |= (1 << REFS0); // Voltage Reference - AVCC
+	ADCSRA |= (1 << ADEN); // ADC Enable
+	ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // ADC Prescaler Selections 128
+}
+uint16_t read_adc() {
+	ADMUX &= 0xF0; // Выбрать канал ADC0
+	ADCSRA |= (1 << ADSC); // начало преобразования
+	while (ADCSRA & (1 << ADSC)); // When the conversion is complete, ADSC returns to zero
+	return ADC;			//Результат работы АЦП
+}
+
+
+int main(void)
+{
+	DDRB |= (1 << PB5);
+	DDRB |= (1 << PB4);
+    DDRB |= (1 << PB1);
+    DDRB |= (1 << PB3);
+	DDRC |= (0 << PC0);
+	DDRC |= (0 << PC1) | (0 << PC2);
+	setup_adc();
+    pwm_init_1();
+	timer0_init();
+	timer2_init();
+	while(1)
+	{
+		if((TIFR2 & (1 << OCF2A)) & (PINC & (1 << PC1)))		// OCF2A устанавливается 1 при достижении таймером OCR2A 
+		{
+			PORTB ^= (1 << PB3);
+			TIFR2 |= (1 << OCF2A);	// Сбрасываем флаг OCF2A
+			TCNT2 = 0;				// Сбрасываем таймер2
+		}
+		else if((TIFR2 & (1 << OCF2B)) & (PINC & (1 << PC2)))		// OCF2B устанавливается 1 при достижении таймером OCR2B 
+		{
+			TIFR2 |= (1 << OCF2B);
+			TCNT2 = 0;				
+			otschet1s++;			// Для достижения 1с отсчитываем 4 раза по 0,25с
+			if(otschet1s == 4)
+			{
+				otschet1s = 0;
+				PORTB ^= (1 << PB3);
+			}
+		}
+		if(TIFR0 & (1 << OCF0A))	// OCF0A устанавливается 1 при достижении таймером OCR0A 
+		{
+			TIFR0 |= (1 << OCF0A);
+			otschet1Gz++;
+			if(otschet1Gz==10)		// Для достижения нужной частоты otschet1Gz == 1/(0.1f)
+			{
+				otschet1Gz = 0;
+				PORTB ^= (1 << PB5);
+			}
+		}
+        OCR1A = read_adc(); // Прочитать значение с ADC
+	}
+}
+```
+**Демонстрация работы схемы в Proteus**
+
+!["Видео"](https://github.com/user-attachments/assets/16560de9-4044-40db-afee-dc51e0db04db)
+
+
