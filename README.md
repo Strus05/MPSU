@@ -3,6 +3,10 @@
 
 [Лабораторная работа №2. Программирование таймеров](https://github.com/Strus05/MPSU/releases/tag/LR2)
 
+[Лабораторная работа №3. Система прерываний. Изучение режимов работы системы прерываний](https://github.com/Strus05/MPSU/releases/tag/LR3)
+
+[Лабораторная работа №4. Аналого-цифровой преобразователь. Изучение режимов работы аналого-цифрового преобразователя](https://github.com/Strus05/MPSU/releases/tag/LR4)
+
 # Авторы:
 [Астафьев Илья](https://github.com/astafa98), 
 [Никитин Даниил](https://github.com/ferizAMDlove), 
